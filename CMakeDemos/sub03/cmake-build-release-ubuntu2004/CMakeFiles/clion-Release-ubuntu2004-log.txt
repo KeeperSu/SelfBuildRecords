@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE_MAKEFILE=ON -G "CodeBlocks - Unix Makefiles" -S /home/sgt/CPlus/Demo01/sub03 -B /home/sgt/CPlus/Demo01/sub03/cmake-build-release-ubuntu2004
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sgt/CPlus/Demo01/sub03/cmake-build-release-ubuntu2004

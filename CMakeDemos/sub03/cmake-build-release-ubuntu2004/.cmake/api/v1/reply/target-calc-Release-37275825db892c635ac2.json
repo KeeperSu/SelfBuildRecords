@@ -1,0 +1,121 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "calc/libcalc.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"calc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/sgt/CPlus/Demo01/sub03/calc/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/sgt/CPlus/Demo01/sub03/add/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/sgt/CPlus/Demo01/sub03/sub/."
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "common::@bfc844598bd03e848b3c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "add::@1778cd13adf194a69ad4"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sub::@2417087a58ea4ddb4a1c"
+		}
+	],
+	"id" : "calc::@470884e9ca6af4ca50cb",
+	"name" : "calc",
+	"nameOnDisk" : "libcalc.a",
+	"paths" : 
+	{
+		"build" : "calc",
+		"source" : "calc"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "calc/calc.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
