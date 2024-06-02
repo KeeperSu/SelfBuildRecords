@@ -1,2 +1,0 @@
-/home/sgt/CPlus/Demo01/sub03/cmake-build-release-ubuntu2004/CMakeFiles/edit_cache.dir
-/home/sgt/CPlus/Demo01/sub03/cmake-build-release-ubuntu2004/CMakeFiles/rebuild_cache.dir
