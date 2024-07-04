@@ -220,7 +220,7 @@ using myInt = int; // since c++11
 >   int x = 3;
 >   int& ref = x;
 >   auto ref1 = ref;  // 这里左边的ref1并不是int&而是会退化成int
->   
+>     
 >   const int y = 3;
 >   auto z = y; // -> int, const int y作为右值使用时，会退化为int，所以z类型为int
 >   ```
@@ -291,7 +291,7 @@ std::integral auto z = 3.5; // 编译报错，因为z的类型被限制在integr
 
 ## - 数组
 
-#### 数组指针、指针数组
+### 数组指针、指针数组
 
 ```c++
 #include <iostream>
@@ -318,3 +318,74 @@ void StudyArr::run() {
 }
 ```
 
+## - `Vector`
+
+```c++
+#include <iostream>
+#include <vector>
+
+std::vector<int> x1(3, 1); // [1, 1, 1]
+std::vector<int> x2 = {1, 2, 3}; // [1, 2, 3]
+```
+
+> 详见：https://en.cppreference.com/w/cpp/container/vector
+
+### 属性
+
+```c++
+std::vector<int> x = {1, 2, 3};
+x.empty();  // 判空
+x.size();	// 个数
+```
+
+### 修改
+
+```c++
+std::vector<int> x = {1, 2, 3};
+x.pushback(4); // 添加
+x.pop_back();	// 弹出末尾元素
+```
+
+### 比较
+
+> 元素按顺序逐步比较
+
+```c++
+std::vector<int> x1 = {1, 2, 3};
+std::vecotr<int> x2 = {1, 3, 2};
+x1 == x2;
+x1 < x2;
+```
+
+### 获取
+
+> vector获取元素使用.at方法可以避免越界问题，并抛出错误
+
+```c++
+std::vector<int> x = {1, 2, 3};
+x[0];
+x.at(0);
+```
+
+### begin 和 end
+
+> .begin() 和 .end()返回类型为迭代器
+
+- 解引用与下标访问
+- 移动
+- 两个迭代器相减求距离
+- 两个迭代器比较
+
+### 从 . 到 ->
+
+```c++
+std::vector<int> x = {1, 2, 3};
+std::vector<int>* ptr = &x;
+(*ptr).size(); // or use: ptr->size();
+```
+
+ ## - `string`
+
+> https://en.cppreference.com/w/cpp/string
+
+ 
