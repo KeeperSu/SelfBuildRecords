@@ -374,7 +374,9 @@
 > -D PNG_LIBRARY_RELEASE=$LIBPNG_DIR/lib/libpng.so \
 > -D JPEG_INCLUDE_DIR=$LIBJPEG_TURBO_DIR/include \
 > -D JPEG_LIBRARY_RELEASE=$LIBJPEG_TURBO_DIR/lib/libjpeg.so \
-> -D SWIG_EXECUTABLE=$SWIG_DIR/bin/swig
+> -D SWIG_EXECUTABLE=$SWIG_DIR/bin/swig \
+> -D GEOS_CONFIG=${GEOS_DIR}/bin/geos-config \
+> -D GEOS_DIR=${GEOS_DIR}
 > make -j32 && make install
 > ```
 
